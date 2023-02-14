@@ -1,26 +1,26 @@
 # whatsapp-api-client library for javascript
-* [![build](https://github.com/green-api/whatsapp-api-client/workflows/build_library/badge.svg)](https://github.com/green-api/whatsapp-api-client/actions/workflows/build_library.yml)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/green-api/whatsapp-api-client/blob/master/LICENSE)
-[![GitHub release](https://img.shields.io/github/v/release/green-api/whatsapp-api-client.svg)](https://github.com/green-api/whatsapp-api-client/releases)
+* [![build](https://github.com/Yard-Team/whatsapp-api-client-js/workflows/build_library/badge.svg)](https://github.com/Yard-Team/whatsapp-api-client-js/actions/workflows/build_library.yml)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Yard-Team/whatsapp-api-client-js/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/v/release/Yard-Team/whatsapp-api-client-js.svg)](https://github.com/Yard-Team/whatsapp-api-client-js/releases)
 
 - [English documentation](README.md)
 - [Документация на русском языке](README_RUS.md)
 
-Javascript библиотека для интеграции с мессенджером WhatsAPP через API сервиса [green-api.com](https://green-api.com)ю Чтобы воспользоваться библиотекой нужно получить регистрационный токен и id аккаунта в [личном кабинете](https://cabinet.green-api.com). Есть бесплатный тариф аккаунта разработчика.
+Javascript библиотека для интеграции с мессенджером WhatsAPP через API сервиса [basis-api.com](https://basis-api.com)ю Чтобы воспользоваться библиотекой нужно получить регистрационный токен и id аккаунта в [личном кабинете](https://cabinet.basis-api.com). Есть бесплатный тариф аккаунта разработчика.
 
 ## API
 
-Документация к REST API находится по [ссылке](https://green-api.com/docs/api/). Библиотека является оберткой к REST API, поэтому документация по ссылке выше применима и к самой библиотеке.
+Документация к REST API находится по [ссылке](https://cabinet.basis-api.com/docs/ru/api/). Библиотека является оберткой к REST API, поэтому документация по ссылке выше применима и к самой библиотеке.
 
 ## Установка
 
 Билиотека работает как на node >=10, так и на современных версиях браузеров chrome, firefox и др. Для приложений на webpack и npm установка выполняется через команду:
 ```
-npm i @green-api/whatsapp-api-client
+npm i @basisapi/whatsapp-api-client
 ```
 Для чистого html js сайта либу можно подключить в index.html
 ``` html
-<script type="text/javascript" src="https://unpkg.com/@green-api/whatsapp-api-client/lib/whatsapp-api-client.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/@basisapi/whatsapp-api-client/lib/whatsapp-api-client.min.js"></script>
 ```
 
 ## ИМпорт 
@@ -29,24 +29,24 @@ npm i @green-api/whatsapp-api-client
 
 Используя классический javascript 
 ```
-const whatsAppClient = require("@green-api/whatsapp-api-client");
+const whatsAppClient = require("@basisapi/whatsapp-api-client");
 ```
 Используя ES6 javascript 
 ```
-import whatsAppClient from "@green-api/whatsapp-api-client";
+import whatsAppClient from "@basisapi/whatsapp-api-client";
 ```
 Используя typescript 
 ```
-import * as whatsAppClient from "@green-api/whatsapp-api-client";
+import * as whatsAppClient from "@basisapi/whatsapp-api-client";
 ```
 Используя браузерный javascript 
 ```
-<script src="https://unpkg.com/@green-api/whatsapp-api-client/lib/whatsapp-api-client.min.js"></script>
+<script src="https://unpkg.com/@basisapi/whatsapp-api-client/lib/whatsapp-api-client.min.js"></script>
 ```
 
 ## Авторизация 
 
-Чтобы отправить сообщение или выполнить другой метод Green-API, аккаунт WhatsApp в приложении телефона должен быть в авторизованном состоянии. Для авторизации аккаунта перейдите в [личный кабинет](https://cabinet.green-api.com) и сканируйте QR-код с использованием прилоения WhatsApp.
+Чтобы отправить сообщение или выполнить другой метод Basis-API, аккаунт WhatsApp в приложении телефона должен быть в авторизованном состоянии. Для авторизации аккаунта перейдите в [личный кабинет](https://cabinet.basis-api.com) и сканируйте QR-код с использованием прилоения WhatsApp.
 
 ## Примеры
 
@@ -55,7 +55,7 @@ import * as whatsAppClient from "@green-api/whatsapp-api-client";
 ### Отправка сообщения на номер WhatsApp
 Используя common js
 ``` js
-const whatsAppClient = require('@green-api/whatsapp-api-client')
+const whatsAppClient = require('@basisapi/whatsapp-api-client')
 
 const restAPI = whatsAppClient.restAPI(({
     idInstance: YOUR_ID_INSTANCE,
@@ -70,7 +70,7 @@ restAPI.message.sendMessage("79999999999@c.us", null, "hello world")
 ```
 или используя js script
 ``` html
-<script src="https://unpkg.com/@green-api/whatsapp-api-client/lib/whatsapp-api-client.min.js"></script>
+<script src="https://unpkg.com/@basisapi/whatsapp-api-client/lib/whatsapp-api-client.min.js"></script>
 <script>
     const restAPI = whatsAppClient.restAPI(({
         idInstance: "YOUR_ID_INSTANCE",
@@ -87,7 +87,7 @@ restAPI.message.sendMessage("79999999999@c.us", null, "hello world")
 Или можно воспользоваться синтаксисом ES6. Для того, чтобы этот синтаксис сработал в приложении на nodejs, нужно в package.json прописать ключ ``"type": "module"``. Далее все примеры будут на ES6 синтаксисе.
 
 ``` js
-import whatsAppClient from '@green-api/whatsapp-api-client'
+import whatsAppClient from '@basisapi/whatsapp-api-client'
 
 (async () => {
     const restAPI = whatsAppClient.restAPI(({
@@ -115,7 +115,7 @@ const restAPI = whatsAppClient.restAPI(({
 ### Получение уведомления через webhook service REST API
 
 ``` js
-import whatsAppClient from '@green-api/whatsapp-api-client'
+import whatsAppClient from '@basisapi/whatsapp-api-client'
 
 (async () => {
 
@@ -148,7 +148,7 @@ import whatsAppClient from '@green-api/whatsapp-api-client'
 
 ### Отправка файла на номер WhatsApp
 ``` js
-import whatsAppClient from '@green-api/whatsapp-api-client'
+import whatsAppClient from '@basisapi/whatsapp-api-client'
 
 (async () => {
     const restAPI = whatsAppClient.restAPI(({
@@ -164,7 +164,7 @@ import whatsAppClient from '@green-api/whatsapp-api-client'
 Вебхуки работают только в node js с на базе express
 
 ``` js
-import whatsAppClient from '@green-api/whatsapp-api-client'
+import whatsAppClient from '@basisapi/whatsapp-api-client'
 import express from "express";
 import bodyParser from 'body-parser';
 

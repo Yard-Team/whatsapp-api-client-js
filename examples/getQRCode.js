@@ -1,4 +1,4 @@
-import whatsAppClient from '@green-api/whatsapp-api-client'
+import whatsAppClient from '@basisapi/whatsapp-api-client'
 
 // Send WhatsApp file
 (async () => {

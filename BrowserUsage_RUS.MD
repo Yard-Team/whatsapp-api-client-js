@@ -5,13 +5,13 @@
 ## 1. Установка
 Добавить скрипт в html файл:
 ``` html
-<script type="text/javascript" src="https://unpkg.com/@green-api/whatsapp-api-client/lib/whatsapp-api-client.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/@basisapi/whatsapp-api-client/lib/whatsapp-api-client.min.js"></script>
 ```
 ## 2. Отправка сообщения в WhatsApp
-Чтобы отправить сообщение нужно получить регистрационный токен и id инстанса через сервер [green-api.com](https://green-api.com), а также пройти авторизацию в телефоне через QR код. В примере значения ``YOUR_ID_INSTANCE`` и ``YOUR_API_TOKEN_INSTANCE`` нужно заменить на свои.
+Чтобы отправить сообщение нужно получить регистрационный токен и id инстанса через сервер [basis-api.com](https://basis-api.com), а также пройти авторизацию в телефоне через QR код. В примере значения ``YOUR_ID_INSTANCE`` и ``YOUR_API_TOKEN_INSTANCE`` нужно заменить на свои.
 
 ``` html
-<script src="https://unpkg.com/@green-api/whatsapp-api-client/lib/whatsapp-api-client.min.js"></script>
+<script src="https://unpkg.com/@basisapi/whatsapp-api-client/lib/whatsapp-api-client.min.js"></script>
 <script>
     const restAPI = whatsAppClient.restAPI(({
         idInstance: "YOUR_ID_INSTANCE",

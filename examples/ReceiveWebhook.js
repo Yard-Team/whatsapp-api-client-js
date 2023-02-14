@@ -1,4 +1,4 @@
-import whatsAppClient from '@green-api/whatsapp-api-client'
+import whatsAppClient from '@basisapi/whatsapp-api-client'
 import express from "express";
 import bodyParser from 'body-parser';
 

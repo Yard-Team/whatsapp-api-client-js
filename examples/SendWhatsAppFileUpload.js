@@ -1,4 +1,4 @@
-import whatsAppClient from '@green-api/whatsapp-api-client'
+import whatsAppClient from '@basisapi/whatsapp-api-client'
 import FormData from 'form-data'
 import * as fs from 'fs'
 
