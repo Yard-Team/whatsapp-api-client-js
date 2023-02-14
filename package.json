@@ -1,6 +1,6 @@
 {
   "name": "@basisapi/whatsapp-api-client",
-  "version": "0.3.30",
+  "version": "0.3.31",
   "description": "Library to integrate with WhatsApp API. For details have look at https://basis-api.com",
   "license": "MIT",
   "main": "lib/bundle.js",
