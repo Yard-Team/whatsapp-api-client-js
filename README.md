@@ -69,7 +69,7 @@ Use common javascript
 const whatsAppClient = require("@basisapi/whatsapp-api-client");
 
 const restAPI = whatsAppClient.restAPI({
-  host: "https://api.basis-api.com",
+  host: "YOUR_API_HOST",
   idInstance: "YOUR_ID_INSTANCE",
   apiTokenInstance: "YOUR_API_TOKEN_INSTANCE",
 });

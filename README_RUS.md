@@ -57,11 +57,11 @@ import * as whatsAppClient from "@basisapi/whatsapp-api-client";
 ``` js
 const whatsAppClient = require('@basisapi/whatsapp-api-client')
 
-const restAPI = whatsAppClient.restAPI(({
-    host: "https://ru-api.basis-api.com",
-    idInstance: YOUR_ID_INSTANCE,
-    apiTokenInstance: YOUR_API_TOKEN_INSTANCE
-}))
+const restAPI = whatsAppClient.restAPI({
+    host: "YOUR_API_HOST",
+    idInstance: "YOUR_ID_INSTANCE",
+    apiTokenInstance: "YOUR_API_TOKEN_INSTANCE",
+});
 
 restAPI.message.sendMessage("79999999999@c.us", null, "hello world")
 .then((data) => {
