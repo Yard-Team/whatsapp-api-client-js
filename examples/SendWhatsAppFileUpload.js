@@ -12,6 +12,6 @@ import * as fs from 'fs'
     data.append('chatId', '7xxxxxxxxxx@c.us');
     data.append('caption', 'My file');
     data.append('file', fs.createReadStream('hello.txt'));
-    const response = await restAPI.file.sendFileByUpload(data)
+    const response = await restAPI.group.sendFileByUpload(data)
     console.log(`file uploaded ${response.idMessage}`)
 })();

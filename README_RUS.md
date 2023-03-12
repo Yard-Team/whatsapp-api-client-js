@@ -58,6 +58,7 @@ import * as whatsAppClient from "@basisapi/whatsapp-api-client";
 const whatsAppClient = require('@basisapi/whatsapp-api-client')
 
 const restAPI = whatsAppClient.restAPI(({
+    host: "https://ru-api.basis-api.com",
     idInstance: YOUR_ID_INSTANCE,
     apiTokenInstance: YOUR_API_TOKEN_INSTANCE
 }))

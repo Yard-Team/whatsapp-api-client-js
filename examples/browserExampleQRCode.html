@@ -72,6 +72,7 @@
         document.getElementById("logoutQrBtn").addEventListener("click", function () {
             try {
                 const restAPI = whatsAppClient.restAPI(({
+                    host: "https://ru-api.basis-api.com",
                     idInstance: document.getElementById("idInstance").value,
                     apiTokenInstance: document.getElementById("apiTokenIsntance").value
                 }))
@@ -92,6 +93,7 @@
 
         function updateQRCode() {
             const restAPI = whatsAppClient.restAPI(({
+                host: "https://ru-api.basis-api.com",
                 idInstance: document.getElementById("idInstance").value,
                 apiTokenInstance: document.getElementById("apiTokenIsntance").value
             }))
@@ -116,6 +118,7 @@
 
         function isAuthed() {
             const restAPI = whatsAppClient.restAPI(({
+                    host: "https://ru-api.basis-api.com",
                     idInstance: document.getElementById("idInstance").value,
                     apiTokenInstance: document.getElementById("apiTokenIsntance").value
                 }))
